@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <!-- Столбец 1: ввод числа -->
+    <EditText
+        android:id="@+id/etCol1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="число"/>
+
+    <!-- Столбец 2: результат (только чтение) -->
+    <EditText
+        android:id="@+id/etCol2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:background="@android:color/transparent"
+        android:hint="результат"/>
+
+    <!-- Столбец 3: ввод числа -->
+    <EditText
+        android:id="@+id/etCol3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="число"/>
+
+    <!-- Столбец 4: комментарий -->
+    <EditText
+        android:id="@+id/etCol4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:inputType="text"
+        android:hint="комментарий"/>
+</LinearLayout>
